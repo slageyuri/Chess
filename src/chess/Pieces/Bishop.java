@@ -7,7 +7,7 @@ import chess.Color;
 public class Bishop extends ChessPiece {
 
 
-    public Bishop(Color color, Board board) {
+    public Bishop(Board board, Color color) {
         super(color, board);
     }
 

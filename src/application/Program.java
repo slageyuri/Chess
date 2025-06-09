@@ -23,6 +23,9 @@ public class Program {
                 System.out.println();
                 System.out.print("Which piece do you want to move? ");
                 ChessPosition source = UI.readChessPosition(sc);
+                boolean[][]possibleMoves = chessmatch.possibleMoves(source);
+                UI.clearScreen();
+                UI.printBoard(chessmatch.getPieces());
 
                 System.out.println();
                 System.out.print("Where do you want to move this piece to? ");

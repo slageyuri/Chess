@@ -68,7 +68,7 @@ public class Knight extends ChessPiece {
     private boolean canMove(Position position){
         Board board;
         ChessPiece p = (ChessPiece) getBoard().piece(position);
-        return p != null && p.getColor()!= getColor();
+        return p == null || p.getColor()!= getColor(); //can move if the position is empty or there's an enemy piece
 
     }
 

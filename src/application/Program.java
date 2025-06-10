@@ -19,7 +19,7 @@ public class Program {
         List<ChessPiece> captured = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
 
-        while(true) {
+        while(!chessmatch.getCheckMate()) {
             try {
                 UI.clearScreen(); //only works in Windows terminal
                 UI.printMatch(chessmatch, captured);
@@ -49,7 +49,7 @@ public class Program {
                 sc.nextLine();
             }
         }
-
+        UI.printMatch(chessmatch, captured);
 
     }
 
